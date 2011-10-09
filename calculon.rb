@@ -18,4 +18,9 @@ class Calculon
     @total = 0
   end
 
+  def eve( exp )
+    raise ArgumentError unless /^[\d +-]*$/ =~ exp
+    @total = eval exp
+  end
+
 end
