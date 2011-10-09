@@ -19,4 +19,12 @@ describe "Calculon" do
     result.should == 2
   end
 
+  it "should return keep running total" do
+    result = @calculon.add 4
+    @calculon.total.should == 4
+
+    result = @calculon.subtract 3
+    @calculon.total.should == 1
+  end
+
 end
