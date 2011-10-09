@@ -14,4 +14,8 @@ class Calculon
     @total -= n
   end
 
+  def clear
+    @total = 0
+  end
+
 end

@@ -27,4 +27,10 @@ describe "Calculon" do
     @calculon.total.should == 1
   end
 
+  it "should clear the total" do
+    result = @calculon.add 4
+    @calculon.clear
+    @calculon.total.should == 0
+  end
+
 end
